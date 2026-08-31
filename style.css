@@ -1,43 +1,13 @@
-task-section {
-    margin-top: 25px;
-}
+@media (max-width: 600px) {
+    .input-section {
+        flex-direction: column;
+    }
 
-.task-section h2 {
-    margin-bottom: 15px;
-}
+    .input-section button {
+        width: 100%;
+    }
 
-#taskList {
-    list-style: none;
-}
-
-.task-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 12px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-.task-content {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex: 1;
-}
-
-.task-text.completed {
-    text-decoration: line-through;
-    color: #888;
-}
-
-.delete-btn {
-    border: none;
-    background: #e74c3c;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
+    .container {
+        padding: 20px;
+    }
 }
