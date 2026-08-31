@@ -1,13 +1,8 @@
-@media (max-width: 600px) {
-    .input-section {
-        flex-direction: column;
-    }
+task-item {
+    background: #fafafa;
+}
 
-    .input-section button {
-        width: 100%;
-    }
-
-    .container {
-        padding: 20px;
-    }
+.input-section input:focus {
+    outline: none;
+    border-color: #555;
 }
