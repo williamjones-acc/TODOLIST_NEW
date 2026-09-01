@@ -24,6 +24,13 @@ function renderTasks() {
             ${task.text}
         </span>
     </div>
+
+    <button
+        class="delete-btn"
+        onclick="deleteTask(${task.id})"
+    >
+        Hapus
+    </button>
 `;
 
         taskList.appendChild(li);
