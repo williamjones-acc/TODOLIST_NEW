@@ -72,6 +72,14 @@ function toggleTask(id) {
             };
         }
 
+function deleteTask(id) {
+    tasks = tasks.filter(function (task) {
+        return task.id !== id;
+    });
+
+    renderTasks();
+}
+
         return task;
     });
 
