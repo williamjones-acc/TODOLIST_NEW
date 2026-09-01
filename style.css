@@ -1,0 +1,8 @@
+task-item {
+    background: #fafafa;
+}
+
+.input-section input:focus {
+    outline: none;
+    border-color: #555;
+}
