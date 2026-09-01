@@ -13,10 +13,18 @@ function renderTasks() {
         li.className = "task-item";
 
         li.innerHTML = `
-            <div class="task-content">
-                <span class="task-text">${task.text}</span>
-            </div>
-        `;
+    <div class="task-content">
+        <input
+            type="checkbox"
+            ${task.completed ? "checked" : ""}
+            onchange="toggleTask(${task.id})"
+        >
+
+        <span class="task-text ${task.completed ? "completed" : ""}">
+            ${task.text}
+        </span>
+    </div>
+`;
 
         taskList.appendChild(li);
     });
@@ -54,3 +62,18 @@ taskInput.addEventListener("keypress", function (event) {
         addTask();
     }
 });
+
+function toggleTask(id) {
+    tasks = tasks.map(function (task) {
+        if (task.id === id) {
+            return {
+                ...task,
+                completed: !task.completed
+            };
+        }
+
+        return task;
+    });
+
+    renderTasks();
+}
