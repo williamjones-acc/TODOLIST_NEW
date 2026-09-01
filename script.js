@@ -22,6 +22,10 @@ function renderTasks() {
     });
 }
 
+function clearInput() {
+    taskInput.value = "";
+}
+
 function addTask() {
     const text = taskInput.value.trim();
 
@@ -40,7 +44,7 @@ function addTask() {
 
     renderTasks();
 
-    taskInput.value = "";
+    clearInput();
 }
 
 addBtn.addEventListener("click", addTask);
