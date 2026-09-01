@@ -4,29 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+
+    <!-- Menghubungkan CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <div class="container">
         <h1>To-Do List</h1>
         <p class="subtitle">Catat tugas kamu dengan mudah</p>
 
         <div class="input-section">
-            <input
-                type="text"
-                id="taskInput"
+            <input 
+                type="text" 
+                id="taskInput" 
                 placeholder="Masukkan tugas..."
             >
+
             <button id="addBtn">Tambah</button>
         </div>
 
-        <section class="task-section">
+        <div class="task-section">
             <h2>Daftar Tugas</h2>
-            <ul id="taskList"></ul>
-        </section>
+
+            <ul id="taskList">
+                <li class="task-item">
+                    <div class="task-content">
+                        <input type="checkbox">
+                        <span class="task-text">Contoh tugas</span>
+                    </div>
+
+                    <button class="delete-btn">Hapus</button>
+                </li>
+            </ul>
+        </div>
     </div>
 
+    <!-- Menghubungkan JavaScript -->
     <script src="script.js"></script>
+
 </body>
 </html>
