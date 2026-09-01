@@ -13,10 +13,25 @@ function renderTasks() {
         li.className = "task-item";
 
         li.innerHTML = `
-            <div class="task-content">
-                <span class="task-text">${task.text}</span>
-            </div>
-        `;
+    <div class="task-content">
+        <input
+            type="checkbox"
+            ${task.completed ? "checked" : ""}
+            onchange="toggleTask(${task.id})"
+        >
+
+        <span class="task-text ${task.completed ? "completed" : ""}">
+            ${task.text}
+        </span>
+    </div>
+
+    <button
+        class="delete-btn"
+        onclick="deleteTask(${task.id})"
+    >
+        Hapus
+    </button>
+`;
 
         taskList.appendChild(li);
     });
@@ -54,3 +69,26 @@ taskInput.addEventListener("keypress", function (event) {
         addTask();
     }
 });
+
+function toggleTask(id) {
+    tasks = tasks.map(function (task) {
+        if (task.id === id) {
+            return {
+                ...task,
+                completed: !task.completed
+            };
+        }
+
+function deleteTask(id) {
+    tasks = tasks.filter(function (task) {
+        return task.id !== id;
+    });
+
+    renderTasks();
+}
+
+        return task;
+    });
+
+    renderTasks();
+}
