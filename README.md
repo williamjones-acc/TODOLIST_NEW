@@ -4,7 +4,7 @@
 Nama Kelompok:KodeKita Studio
 
 Anggota Kelompok
- No  Nama | Peran |
+ No  Nama  Peran 
 
  1  Wiliam  Project Manager  Team Lead 
  2  Adelio  Front-End Developer 
@@ -25,6 +25,6 @@ Aplikasi To-Do List untuk mencatat dan mengelola tugas.
  4. Struktur Branch
 main
  develop
- feature/navbar
- feature/fitur-todo
- feature/dokumentasi
+ feature hapus/selesai
+ feature tambah/tugas
+ feature html/css/js
