@@ -1,5 +1,3 @@
-# LAPORAN KOLABORASI TIM IT
-
  1. Identitas Kelompok
 Nama Kelompok:KodeKita Studio
 
@@ -7,8 +5,8 @@ Anggota Kelompok
  No  Nama  Peran 
 
  1  Wiliam  Project Manager  Team Lead 
- 2  Adelio  Front-End Developer 
- 3  Nadif  Back-End Developer 
+ 2  nadif  Front-End Developer 
+ 3  Adelio  Back-End Developer 
  4  Ndaroe  UI/UX & Dokumentasi  QA 
 
  2. Nama Proyek
