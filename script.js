@@ -2,7 +2,7 @@ const taskInput = document.getElementById("taskInput");
 const addBtn = document.getElementById("addBtn");
 const taskList = document.getElementById("taskList");
 
-let tasks = [];
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 function renderTasks() {
     taskList.innerHTML = "";
@@ -14,8 +14,20 @@ function renderTasks() {
 
         li.innerHTML = `
             <div class="task-content">
-                <span class="task-text">${task.text}</span>
+                <input 
+                    type="checkbox" 
+                    ${task.completed ? "checked" : ""}
+                    onchange="toggleTask(${task.id})"
+                >
+
+                <span class="task-text ${task.completed ? "completed" : ""}">
+                    ${task.text}
+                </span>
             </div>
+
+            <button class="delete-btn" onclick="deleteTask(${task.id})">
+                Hapus
+            </button>
         `;
 
         taskList.appendChild(li);
@@ -24,6 +36,10 @@ function renderTasks() {
 
 function clearInput() {
     taskInput.value = "";
+}
+
+function saveTasks() {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
 function addTask() {
@@ -40,11 +56,29 @@ function addTask() {
         completed: false
     };
 
-    tasks.push(task);
+   tasks.push(task);
+
+saveTasks();
+renderTasks();
+}
+
+function toggleTask(id) {
+    tasks.forEach(function (task) {
+        if (task.id === id) {
+            task.completed = !task.completed;
+        }
+    });
+
+   saveTasks();
+renderTasks();
+}
+
+function deleteTask(id) {
+    tasks = tasks.filter(function (task) {
+        return task.id !== id;
+    });
 
     renderTasks();
-
-    clearInput();
 }
 
 addBtn.addEventListener("click", addTask);
