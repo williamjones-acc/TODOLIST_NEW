@@ -16,7 +16,7 @@ Aplikasi To-Do List untuk mencatat dan mengelola tugas.
 
  3. Pembagian Tugas
 - Wiliam: Mengelola repository, branch, Issue, dan Pull Request.
-- Nadif: Mengerjakan tampilan aplikasi.
+- Nadhif: Mengerjakan tampilan aplikasi.
 - Adelio: Mengerjakan fungsi utama aplikasi.
 - Ndaroe: Dokumentasi, UI/UX, dan testing.
 
