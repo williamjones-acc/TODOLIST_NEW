@@ -6,10 +6,10 @@ Nama Kelompok:KodeKita Studio
 Anggota Kelompok
  No  Nama | Peran |
 
- 1  Adelio  Project Manager  Team Lead 
- 2  Daru  Front-End Developer 
- 3  Wiliiam  Back-End Developer 
- 4  Nadif  UI/UX & Dokumentasi  QA 
+ 1  Wiliam  Project Manager  Team Lead 
+ 2  Adelio  Front-End Developer 
+ 3  Nadif  Back-End Developer 
+ 4  Ndaroe  UI/UX & Dokumentasi  QA 
 
  2. Nama Proyek
 
@@ -18,10 +18,10 @@ Anggota Kelompok
 Aplikasi To-Do List untuk mencatat dan mengelola tugas.
  3. Pembagian Tugas
 
-- Adelio: Mengelola repository, branch, Issue, dan Pull Request.
-- Daru: Mengerjakan tampilan aplikasi.
-- Wiliiam: Mengerjakan fungsi utama aplikasi.
-- Nadif: Dokumentasi, UI/UX, dan testing.
+- Wiliam: Mengelola repository, branch, Issue, dan Pull Request.
+- Adelio: Mengerjakan tampilan aplikasi.
+- Nadif: Mengerjakan fungsi utama aplikasi.
+- Ndaroe: Dokumentasi, UI/UX, dan testing.
 
  4. Struktur Branch
 
