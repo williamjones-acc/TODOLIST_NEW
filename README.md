@@ -5,7 +5,7 @@ Anggota Kelompok
  No  Nama  Peran 
 
  1  Wiliam  Project Manager  Team Lead 
- 2  nadif  Front-End Developer 
+ 2  Nadhif  Front-End Developer 
  3  Adelio  Back-End Developer 
  4  Ndaroe  UI/UX & Dokumentasi  QA 
 
